@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "85e3d7f7-0e74-451e-b3da-740ab2ac3ec9",
+		"name": "工匠杯",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwIiwic3RhIjoxNjAzMDcxMzY2MDk3LCJBdXRoVXNlciI6eyJkZXB0TmFtZSI6IumHjeW6huiuvuiuoemZoiIsImRlcHRDb2RlcyI6WyJBIl0sImxhc3RNb2RpZmllZERhdGUiOm51bGwsImxhc3RNb2RpZmllZEJ5IjpudWxsLCJsYXN0TW9kaWZpZWROYW1lIjpudWxsLCJtb2JpbGUiOiIwIiwidXNlck5hbWUiOiJhZG1pbiIsImlzQWJsZWQiOm51bGwsInJvbGVJZHMiOlswXSwiY3JlYXRlZERhdGUiOm51bGwsIm1lbnVDb2RlcyI6W10sImNyZWF0ZWRCeSI6bnVsbCwibG9naW5OYW1lIjoiYWRtaW4iLCJjcmVhdGVkTmFtZSI6bnVsbCwiaWQiOjAsImpvYiI6IueuoeeQhuWRmCIsImRlcHRDb2RlIjoiQSJ9LCJleHAiOjE2MDMxNTc3NjYwOTZ9.IZSTeQC9uMV9uY4VOvGqelmo5Ax3_3LZBJM1UsRjElA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/test",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwIiwic3RhIjoxNjAzMDcxMzY2MDk3LCJBdXRoVXNlciI6eyJkZXB0TmFtZSI6IumHjeW6huiuvuiuoemZoiIsImRlcHRDb2RlcyI6WyJBIl0sImxhc3RNb2RpZmllZERhdGUiOm51bGwsImxhc3RNb2RpZmllZEJ5IjpudWxsLCJsYXN0TW9kaWZpZWROYW1lIjpudWxsLCJtb2JpbGUiOiIwIiwidXNlck5hbWUiOiJhZG1pbiIsImlzQWJsZWQiOm51bGwsInJvbGVJZHMiOlswXSwiY3JlYXRlZERhdGUiOm51bGwsIm1lbnVDb2RlcyI6W10sImNyZWF0ZWRCeSI6bnVsbCwibG9naW5OYW1lIjoiYWRtaW4iLCJjcmVhdGVkTmFtZSI6bnVsbCwiaWQiOjAsImpvYiI6IueuoeeQhuWRmCIsImRlcHRDb2RlIjoiQSJ9LCJleHAiOjE2MDMxNTc3NjYwOTZ9.IZSTeQC9uMV9uY4VOvGqelmo5Ax3_3LZBJM1UsRjElA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"kind\":\"cm\",\"type\":\"z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/add",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upsert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwIiwic3RhIjoxNjAzMDcxMzY2MDk3LCJBdXRoVXNlciI6eyJkZXB0TmFtZSI6IumHjeW6huiuvuiuoemZoiIsImRlcHRDb2RlcyI6WyJBIl0sImxhc3RNb2RpZmllZERhdGUiOm51bGwsImxhc3RNb2RpZmllZEJ5IjpudWxsLCJsYXN0TW9kaWZpZWROYW1lIjpudWxsLCJtb2JpbGUiOiIwIiwidXNlck5hbWUiOiJhZG1pbiIsImlzQWJsZWQiOm51bGwsInJvbGVJZHMiOlswXSwiY3JlYXRlZERhdGUiOm51bGwsIm1lbnVDb2RlcyI6W10sImNyZWF0ZWRCeSI6bnVsbCwibG9naW5OYW1lIjoiYWRtaW4iLCJjcmVhdGVkTmFtZSI6bnVsbCwiaWQiOjAsImpvYiI6IueuoeeQhuWRmCIsImRlcHRDb2RlIjoiQSJ9LCJleHAiOjE2MDMxNTc3NjYwOTZ9.IZSTeQC9uMV9uY4VOvGqelmo5Ax3_3LZBJM1UsRjElA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"kind\":\"foo\",\"type\":\"bar-3\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/upsert",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"upsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwIiwic3RhIjoxNjAzMDcxMzY2MDk3LCJBdXRoVXNlciI6eyJkZXB0TmFtZSI6IumHjeW6huiuvuiuoemZoiIsImRlcHRDb2RlcyI6WyJBIl0sImxhc3RNb2RpZmllZERhdGUiOm51bGwsImxhc3RNb2RpZmllZEJ5IjpudWxsLCJsYXN0TW9kaWZpZWROYW1lIjpudWxsLCJtb2JpbGUiOiIwIiwidXNlck5hbWUiOiJhZG1pbiIsImlzQWJsZWQiOm51bGwsInJvbGVJZHMiOlswXSwiY3JlYXRlZERhdGUiOm51bGwsIm1lbnVDb2RlcyI6W10sImNyZWF0ZWRCeSI6bnVsbCwibG9naW5OYW1lIjoiYWRtaW4iLCJjcmVhdGVkTmFtZSI6bnVsbCwiaWQiOjAsImpvYiI6IueuoeeQhuWRmCIsImRlcHRDb2RlIjoiQSJ9LCJleHAiOjE2MDMxNTc3NjYwOTZ9.IZSTeQC9uMV9uY4VOvGqelmo5Ax3_3LZBJM1UsRjElA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ids\":[5,6]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/delete",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwIiwic3RhIjoxNjAzMDcxMzY2MDk3LCJBdXRoVXNlciI6eyJkZXB0TmFtZSI6IumHjeW6huiuvuiuoemZoiIsImRlcHRDb2RlcyI6WyJBIl0sImxhc3RNb2RpZmllZERhdGUiOm51bGwsImxhc3RNb2RpZmllZEJ5IjpudWxsLCJsYXN0TW9kaWZpZWROYW1lIjpudWxsLCJtb2JpbGUiOiIwIiwidXNlck5hbWUiOiJhZG1pbiIsImlzQWJsZWQiOm51bGwsInJvbGVJZHMiOlswXSwiY3JlYXRlZERhdGUiOm51bGwsIm1lbnVDb2RlcyI6W10sImNyZWF0ZWRCeSI6bnVsbCwibG9naW5OYW1lIjoiYWRtaW4iLCJjcmVhdGVkTmFtZSI6bnVsbCwiaWQiOjAsImpvYiI6IueuoeeQhuWRmCIsImRlcHRDb2RlIjoiQSJ9LCJleHAiOjE2MDMxNTc3NjYwOTZ9.IZSTeQC9uMV9uY4VOvGqelmo5Ax3_3LZBJM1UsRjElA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/get",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwIiwic3RhIjoxNjAzMDcxMzY2MDk3LCJBdXRoVXNlciI6eyJkZXB0TmFtZSI6IumHjeW6huiuvuiuoemZoiIsImRlcHRDb2RlcyI6WyJBIl0sImxhc3RNb2RpZmllZERhdGUiOm51bGwsImxhc3RNb2RpZmllZEJ5IjpudWxsLCJsYXN0TW9kaWZpZWROYW1lIjpudWxsLCJtb2JpbGUiOiIwIiwidXNlck5hbWUiOiJhZG1pbiIsImlzQWJsZWQiOm51bGwsInJvbGVJZHMiOlswXSwiY3JlYXRlZERhdGUiOm51bGwsIm1lbnVDb2RlcyI6W10sImNyZWF0ZWRCeSI6bnVsbCwibG9naW5OYW1lIjoiYWRtaW4iLCJjcmVhdGVkTmFtZSI6bnVsbCwiaWQiOjAsImpvYiI6IueuoeeQhuWRmCIsImRlcHRDb2RlIjoiQSJ9LCJleHAiOjE2MDMxNTc3NjYwOTZ9.IZSTeQC9uMV9uY4VOvGqelmo5Ax3_3LZBJM1UsRjElA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/getDto",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"getDto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwIiwic3RhIjoxNjAzMDcxMzY2MDk3LCJBdXRoVXNlciI6eyJkZXB0TmFtZSI6IumHjeW6huiuvuiuoemZoiIsImRlcHRDb2RlcyI6WyJBIl0sImxhc3RNb2RpZmllZERhdGUiOm51bGwsImxhc3RNb2RpZmllZEJ5IjpudWxsLCJsYXN0TW9kaWZpZWROYW1lIjpudWxsLCJtb2JpbGUiOiIwIiwidXNlck5hbWUiOiJhZG1pbiIsImlzQWJsZWQiOm51bGwsInJvbGVJZHMiOlswXSwiY3JlYXRlZERhdGUiOm51bGwsIm1lbnVDb2RlcyI6W10sImNyZWF0ZWRCeSI6bnVsbCwibG9naW5OYW1lIjoiYWRtaW4iLCJjcmVhdGVkTmFtZSI6bnVsbCwiaWQiOjAsImpvYiI6IueuoeeQhuWRmCIsImRlcHRDb2RlIjoiQSJ9LCJleHAiOjE2MDMxNTc3NjYwOTZ9.IZSTeQC9uMV9uY4VOvGqelmo5Ax3_3LZBJM1UsRjElA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pageNo\": 1,\r\n    \"pageSize\": 20,\r\n    \"sortType\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/getPage",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"getPage"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"password\": \"321993b81ee2bc8295af95fb1ea9f3f6\",\r\n   \"username\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/user/login",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
